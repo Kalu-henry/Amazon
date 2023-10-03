@@ -346,7 +346,13 @@ function exitDropdownlist(){
     document.querySelector('.hamburger-exit-image').style.display = 'none';
     document.querySelector('.hamburger-image').style.display = 'block';
     document.getElementById('dropdown-info').style.display = 'none';
-    document.getElementById('body').style.paddingTop = '0.5rem';
+    document.getElementById('body').style.paddingTop = '0.5rem'; 
+    
+    if(CartQuantity > 0){
+        document.querySelector('.cart-notification').style.display = 'block';
+    }else{
+        document.querySelector('.cart-notification').style.display = 'none';
+    }
 }
 
 function addSocksToCart(){
