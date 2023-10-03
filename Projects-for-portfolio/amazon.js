@@ -340,6 +340,7 @@ function Dropdownlist(){
     document.querySelector('.hamburger-image').style.display = 'none';
     document.getElementById('dropdown-info').style.display = 'block';
     document.getElementById('body').style.paddingTop = '7rem';
+    document.querySelector('.cart-notification').style.display = 'none';
 }
 function exitDropdownlist(){
     document.querySelector('.hamburger-exit-image').style.display = 'none';
@@ -360,7 +361,8 @@ function addSocksToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 
 function addTshirtToCart(){
@@ -375,7 +377,8 @@ function addTshirtToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 
 function addRugMatToCart(){
@@ -390,7 +393,8 @@ function addRugMatToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 
 function addCurtainsToCart(){
@@ -406,6 +410,7 @@ function addCurtainsToCart(){
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
     document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 
     // let displayAddedText = setInterval(()=>{
     //     document.querySelector('.for-Js-text-added-4').style.display = 'block';
@@ -429,6 +434,7 @@ function addBlackCurtainsToCart(){
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
     document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addTowelToCart(){
     let noOfItems = Number(document.querySelector('.towels').value);
@@ -442,7 +448,8 @@ function addTowelToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addEarringsToCart(){
     let noOfItems = Number(document.querySelector('.earrings').value);
@@ -455,7 +462,8 @@ function addEarringsToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addDuvetToCart(){
     let noOfItems = Number(document.querySelector('.duvet').value);
@@ -468,7 +476,8 @@ function addDuvetToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addTissueToCart(){
     let noOfItems = Number(document.querySelector('.tissue').value);
@@ -481,7 +490,8 @@ function addTissueToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addPinkSneakersToCart(){
     let noOfItems = Number(document.querySelector('.pinkSneakers').value);
@@ -495,7 +505,8 @@ function addPinkSneakersToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addKakiToCart(){
     let noOfItems = Number(document.querySelector('.kaki').value);
@@ -508,7 +519,8 @@ function addKakiToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addRedHoddieToCart(){
     let noOfItems = Number(document.querySelector('.redHoodie').value);
@@ -522,7 +534,8 @@ function addRedHoddieToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addRegularPoloToCart(){
     let noOfItems = Number(document.querySelector('.polo').value);
@@ -536,7 +549,8 @@ function addRegularPoloToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addyellowHoodieToCart(){
     let noOfItems = Number(document.querySelector('.yellowHoodie').value);
@@ -550,7 +564,8 @@ function addyellowHoodieToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addTrashCanToCart(){
     let noOfItems = Number(document.querySelector('.trashcan').value);
@@ -564,7 +579,8 @@ function addTrashCanToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addBeanieToCart(){
     let noOfItems = Number(document.querySelector('.beanie').value);
@@ -578,7 +594,8 @@ function addBeanieToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addSunglassesToCart(){
     let noOfItems = Number(document.querySelector('.sunglasses').value);
@@ -592,7 +609,8 @@ function addSunglassesToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addGlassKettleToCart(){
     let noOfItems = Number(document.querySelector('.kettle').value);
@@ -606,7 +624,8 @@ function addGlassKettleToCart(){
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addBlackSneakersToCart(){
     let noOfItems = Number(document.querySelector('.blackSneakers').value);
@@ -619,7 +638,8 @@ function addBlackSneakersToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
 
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 function addLiquidSoapToCart(){
     let noOfItems = Number(document.querySelector('.liquidSoap').value);
@@ -632,7 +652,8 @@ function addLiquidSoapToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
     
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 
 function addBlenderToCart(){
@@ -646,7 +667,8 @@ function addBlenderToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
     
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 
 function addMirrorToCart(){
@@ -660,7 +682,8 @@ function addMirrorToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
     
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 
 function addWomenJoggersToCart(){
@@ -674,7 +697,8 @@ function addWomenJoggersToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
     
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
 
 function addCoffeeMakerToCart(){
@@ -688,5 +712,6 @@ function addCoffeeMakerToCart(){
     localStorage.setItem("Cart_QUantity", `${CartQuantity}`);
     
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
-    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`
+    document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+    document.querySelector('.cart-notification').style.display = 'block';
 }
