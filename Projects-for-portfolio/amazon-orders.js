@@ -3,6 +3,7 @@ function Dropdownlist(){
     document.querySelector('.hamburger-image').style.display = 'none';
     document.getElementById('dropdown-info').style.display = 'block';
     document.getElementById('body').style.paddingTop = '9rem';
+    document.querySelector('.cart-notification').style.display = 'none';
 }
 function exitDropdownlist(){
     document.querySelector('.hamburger-exit-image').style.display = 'none';
