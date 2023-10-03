@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="amazon-orders.css">
+</head>
+<body onload="generateId()" id="body">
+    <div class="header-nav">
+        <div class="left-section">
+            <a href="amazon.html" style="text-decoration: none;">
+                <img src="images-for-project/amazon-logo-white.png" class="normal-logo">
+            </a>
+            <a href="amazon.html" style="text-decoration: none;">
+                <img src="images-for-project/amazon-mobile-logo-white.png"  class="mobile-logo">
+            </a>
+        </div>
+        <div class="middle-section">
+            <input type="text" placeholder="Search" class="input-search-box">
+            <button class="search-button"><img src="images-for-project/search-icon.png" style="height: 80%;"></button>
+        </div>
+        <div class="right-section">
+            <a href="amazon-orders.html" style="text-decoration: none;color: white;">
+                <div class="returns">
+                    <div style="font-size: 0.8rem;">Returns</div>
+                    <div style="font-weight: bold;">& Orders</div>
+                </div>
+            </a>
+            <a href="amazon-checkout.html" style="text-decoration: none;">
+                <div class="cart">
+                    <div style="display: inline-block;position: relative;">
+                        <img src="images-for-project/cart-icon.png" style="height: 2rem;">
+                        <div class="number-of-items-in-cart">0</div>
+                    </div>
+                    <div style="display: inline-block;font-weight: bold;color: white;" >Cart</div>
+                </div>
+            </a>
+            <div class="hamburger-menu" >
+                <img src="images-for-project/hamburger-menu.png" class="hamburger-image" onclick="Dropdownlist()">
+                <img src="images-for-project/hamburger-exit-button-2.png" class="hamburger-exit-image" onclick="exitDropdownlist()">
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown-info" id="dropdown-info">
+        <a href="amazon-orders.html" style="text-decoration: none;color:white;">
+            <div class="for-return">Returns & Orders</div>
+        </a>
+        <a href="amazon-checkout.html" style="text-decoration: none;">
+            <div class="for-cart">Cart()</div>
+        </a>
+    </div>
+
+
+    <div class="tracking-div">
+        <a href="amazon-orders.html" class="view-orders-link">View all orders</a>
+
+        <div class="products-arrival-date-for-tracking">Arriving on Tuesday, September 26</div>
+        <div class="products-name-for-tracking">Intermediate Size Basketball</div>
+        <div style="margin-bottom: 4rem;">Quantity: 
+            <div class="products-quantity-for-tracking" style="display:inline-block;">2</div>
+        </div>
+
+        <div class="product-image-for-tracking">
+            <img src="images-for-project/blackout-curtain-set-beige.webp" class="tracking-image" style="width: 60%;">
+        </div>
+
+        <div class="product-tracking-terms" style="margin-top: 4rem;">
+            <div style="font-weight: bold;font-size: 1.3rem;" class="preparing">Preparing</div>
+            <div style="font-weight: bold;font-size: 1.3rem;" class="shipped">Shipped</div>
+            <div style="font-weight: bold;font-size: 1.3rem;" class="delivered">Delivered</div>
+        </div>
+
+        <div class="progress-bar-container-for-tracking">
+            <div class="progress-bar-for-tracking"></div>
+        </div>
+    </div>
+
+    <div class="your-order">Your Orders</div>
+
+    
+    
+    <div class="container-for-all-products-order">
+
+        <div class="orders-for-that-particular-delivery-date js-orders-for-that-particular-delivery-date">
+        
+            <div class="order-info" >
+                <div class="confirm-order-placed">
+                    <div style="font-weight: bold;margin-bottom: 0.2rem;">Order Placed: </div>
+                    <div class="order-date">September 21</div>
+                </div>
+                <div class="confirm-total-of-order-placed">
+                    <div style="font-weight: bold;margin-bottom: 0.2rem;">Total: </div>
+                    <div> $<div style="display: inline-block" class="order-total">200</div>
+                    </div>
+                </div>
+                <div class="confirm-order-id">
+                    <div style="font-weight: bold;margin-bottom: 0.2rem;">Order ID: </div>
+                    <div class="order-id">12-er758ejhejf9jjrhr9988</div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="for-generated-products-with-js">
+            
+        </div>
+        
+    </div>
+
+    <script src="amazon-orders.js"></script>
+</body>
+</html>

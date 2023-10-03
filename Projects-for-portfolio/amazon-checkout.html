@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="amazon-checkout.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-image">
+            <a href="amazon.html" style="text-decoration: none;">
+                <img src="images-for-project/amazon-logo.png" style="height: 100%;" class="normal-logo">
+            </a>
+            <a href="amazon.html" style="text-decoration: none;">
+                <img src="images-for-project/amazon-mobile-logo.png"  class="mobile-logo">
+            </a>
+        </div>
+        <div class="checkout-div">Checkout (<p style="display:inline-block;" class="number-of-items js-number-of-items"></p> <span style="color: green;">Items</span>)</div>
+        <div>
+            <img src="images-for-project/checkout-lock-icon.png">
+        </div>
+    </div>
+
+    <p class="review-text">Review your Order</p>
+    <div class="container-for-orders-and-total">
+        <div class="for-orders">
+
+        </div>
+        
+        <div class="for-total">
+            <div class="table-caption">Order Summary</div>
+            <div class="items-div">
+                <div>Items(<div class="total-number-of-items js-total-number-of-items" style="display: inline-block;"></div>)</div>
+                <div style="text-align: right;">$<div style="display: inline-block;" class="items-amount js-items-amount">139.99</div></div>
+                <div>Shipping & handling</div>
+                <div style="text-align: right;">$<span class="shipping-amount">0</span></div>
+            </div>
+            
+            <div class="tax-div">
+                <div>Total before Tax:</div>
+                <div style="text-align: right;">$<span class="amount-before-tax">0</span></div>
+                <div>Estimated Tax(10%):</div>
+                <div style="text-align: right;">$<span class="estimated-tax-amount">0</span></div>
+            </div>
+            
+            <div class="total-amount-div">
+                <div>Order total:</div>
+                <div style="text-align: right;">$<span class="total-amount">0</span></div>
+            </div>
+
+            <label for="forPaypal">Use PayPal</label>
+            <input type="checkbox" name="Paypal" id="forPaypal" style="cursor: pointer;"><br>
+
+            <a style="text-decoration: none;" class="place-order-link-button">
+                <button class="place-order-button" onclick="
+                    if(Number(document.querySelector('.total-amount').innerHTML) === 0){
+                        document.querySelector('.error-message').innerHTML = 'Choose the delivery option for each product!!';
+                        document.querySelector('.error-message').style.color = 'red';
+                        document.querySelector('.error-message').style.marginTop = '1rem';
+                        document.querySelector('.error-message').style.fontSize = '1rem';
+                        document.querySelector('.error-message').style.fontWeight = 'bold';
+                        document.querySelector('.error-message').style.display = 'block';
+                    }else{
+                        document.querySelector('.error-message').innerHTML = 'Order placed Successfully!';
+                        document.querySelector('.error-message').style.color = 'green';
+                        document.querySelector('.error-message').style.marginTop = '1rem';
+                        document.querySelector('.error-message').style.fontSize = '1rem';
+                        document.querySelector('.error-message').style.fontWeight = 'bold';
+                        document.querySelector('.error-message').style.display = 'block';
+
+                        document.querySelector('.place-order-link-button').href = 'amazon-orders.html';
+                    }
+                ">
+                    Place your order
+                </button>
+            </a>
+            <div class="error-message" style="display: none;text-align: center;"></div>
+        </div>
+    </div>
+
+    <script src="amazon-checkout.js"></script>    
+</body>
+</html>

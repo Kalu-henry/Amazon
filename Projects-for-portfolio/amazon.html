@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body id="body">
+    <div class="header-nav">
+        <div class="left-section">
+            <a href="amazon.html" style="text-decoration: none;">
+                <img src="images-for-project/amazon-logo-white.png" class="normal-logo">
+            </a>
+            <a href="amazon.html" style="text-decoration: none;">
+                <img src="images-for-project/amazon-mobile-logo-white.png"  class="mobile-logo">
+            </a>
+        </div>
+        <div class="middle-section">
+            <input type="text" placeholder="Search" class="input-search-box">
+            <button class="search-button"><img src="images-for-project/search-icon.png" style="height: 80%;"></button>
+        </div>
+        <div class="right-section">
+            <a href="amazon-orders.html" style="text-decoration: none;color: white;">
+                <div class="returns">
+                    <div style="font-size: 0.8rem;">Returns</div>
+                    <div style="font-weight: bold;">& Orders</div>
+                </div>
+            </a>
+            <a href="amazon-checkout.html" style="text-decoration: none;">
+                <div class="cart">
+                    <div style="display: inline-block;position: relative;">
+                        <img src="images-for-project/cart-icon.png" style="height: 2rem;">
+                        <div class="number-of-items-in-cart">0</div>
+                    </div>
+                    <div style="display: inline-block;font-weight: bold;color: white;" >Cart</div>
+                </div>
+            </a>
+            <div class="hamburger-menu" >
+                <img src="images-for-project/hamburger-menu.png" class="hamburger-image" onclick="Dropdownlist()">
+                <img src="images-for-project/hamburger-exit-button-2.png" class="hamburger-exit-image" onclick="exitDropdownlist()">
+            </div>
+        </div>
+    </div>
+
+    <div class="dropdown-info" id="dropdown-info">
+        <a href="amazon-orders.html" style="text-decoration: none;color:white;">
+            <div class="for-return">Returns & Orders</div>
+        </a>
+        <a href="amazon-checkout.html" style="text-decoration: none;">
+            <div class="for-cart">Cart()</div>
+        </a>
+    </div>
+
+    <!-- container for products -->
+    <div class="container-for-all-products">
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/athletic-cotton-socks-6-pairs.jpg" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Black and Gray Athletic Cotton Socks - 6 Pairs
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-45.png" style="height: 100%;">
+                <div class="rating-text">87</div>
+            </div>
+            <div class="product-price">
+                $10.90
+            </div>
+            <div class="product-quantity">
+                <select class="socks" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button" onclick="addSocksToCart()">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--2nd product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/adults-plain-cotton-tshirt-2-pack-teal.jpg" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Adults Plain Cotton T-Shirt - 2 Pack
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-45.png" style="height: 100%;">
+                <div class="rating-text">56</div>
+            </div>
+            <div class="product-price">
+                $7.99
+            </div>
+            <div class="product-quantity">
+                <select class="tshirt" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button" onclick="addTshirtToCart()">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--3rd product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/bathroom-rug.jpg" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Bathroom Bath Rug Mat 20 x 31 Inch - Grey
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">119</div>
+            </div>
+            <div class="product-price">
+                $12.50
+            </div>
+            <div class="product-quantity">
+                <select class="rug" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button" onclick="addRugMatToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--4th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/blackout-curtain-set-beige.webp" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Blackout Curtains Set 4-Pack - Beige
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-5.png" style="height: 100%;">
+                <div class="rating-text">232</div>
+            </div>
+            <div class="product-price">
+                $45.99
+            </div>
+            <div class="product-quantity">
+                <select class="curtain" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added-4"></div>
+            <div class="for-button">
+                <button class="add-button" onclick="addCurtainsToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--5th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/blackout-curtains-black.jpg" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Blackout Curtains Set 42 x 84-Inch - Black, 2
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-5.png" style="height: 100%;">
+                <div class="rating-text">363</div>
+            </div>
+            <div class="product-price">
+                $30.99
+            </div>
+            <div class="product-quantity">
+                <select class="blackCurtains" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button" onclick="addBlackCurtainsToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--6th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/luxury-tower-set-6-piece.jpg" style="width: 100%;">
+            </div>
+            <div class="product-text">
+                Luxury Towel Set - Graphite Gray
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-45.png" style="height: 100%;">
+                <div class="rating-text">144</div>
+            </div>
+            <div class="product-price">
+                $35.99
+            </div>
+            <div class="product-quantity">
+                <select class="towels" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button" onclick="addTowelToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--7th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/double-elongated-twist-french-wire-earrings.webp" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Double Oval Twist French Wire Earrings
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">117</div>
+            </div>
+            <div class="product-price">
+                $24.00
+            </div>
+            <div class="product-quantity">
+                <select class="earrings" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-7" onclick="addEarringsToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--8th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/duvet-cover-set-blue-twin.jpg" style="width: 100%;height: 100%;" class="image-8">
+            </div>
+            <div class="product-text">
+                Duvet Cover Set with Zipper Closure
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-5.png" style="height: 100%;">
+                <div class="rating-text">456</div>
+            </div>
+            <div class="product-price">
+                $23.99
+            </div>
+            <div class="product-quantity">
+                <select class="duvet" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            
+            <div class="specific-product">
+                <div class="color">Color</div>
+                <button class="blue-button forDuvet-blue" onclick="
+                document.querySelector('.image-8').src = 'images-for-project/duvet-cover-set-blue-twin.jpg';
+                document.querySelector('.forDuvet-red').style.border = 'none';
+                document.querySelector('.forDuvet-blue').style.border = '2px solid orange';
+                ">Blue</button>
+                <button class="Red-button forDuvet-red" onclick="
+                document.querySelector('.image-8').src = 'images-for-project/duvet-cover-set-red-twin.jpg';
+                document.querySelector('.forDuvet-red').style.border = '2px solid orange';
+                document.querySelector('.forDuvet-blue').style.border = 'none';
+                ">Red</button>
+
+                <div class="size">Size</div>
+                <button class="twin-button twinny" onclick="
+                    document.querySelector('.image-8').src = 'images-for-project/duvet-cover-set-blue-twin.jpg';
+                    document.querySelector('.twinny').style.border = '2px solid orange';
+                    document.querySelector('.quinny').style.border = 'none';
+                ">Twin</button>
+                <button class="queen-button quinny" onclick="
+                document.querySelector('.image-8').src = 'images-for-project/duvet-cover-set-red-queen.jpg';
+                document.querySelector('.twinny').style.border = 'none';
+                document.querySelector('.quinny').style.border = '2px solid orange';
+                ">Queen</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-8" onclick="addDuvetToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--9th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/kitchen-paper-towels-30-pack.jpg" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                2-Ply Kitchen Paper Towels - 30 Pack
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-45.png" style="height: 100%;">
+                <div class="rating-text">1045</div>
+            </div>
+            <div class="product-price">
+                $57.99
+            </div>
+            <div class="product-quantity">
+                <select class="tissue" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-9" onclick="addTissueToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--10th product-->
+        <div class="product-details">
+            <div class="image-div" style="display: flex;align-items: center;justify-content: center;">
+                <img src="images-for-project/knit-athletic-sneakers-pink.webp" style="width: 100%;">
+            </div>
+            <div class="product-text">
+                Waterproof Knit Athletic Sneakers - Pink
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">89</div>
+            </div>
+            <div class="product-price">
+                $33.90
+            </div>
+            <div class="product-quantity">
+                <select class="pinkSneakers" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product-2">
+                <div class="size">Size</div>
+                <button class="size-button six" onclick="
+                document.querySelector('.six').style.border = '2px solid orange';
+                document.querySelector('.seven').style.border = 'none';
+                document.querySelector('.eight').style.border = 'none';
+                document.querySelector('.nine').style.border = 'none';
+                ">6</button>
+                <button class="size-button seven" onclick="
+                document.querySelector('.six').style.border = 'none';
+                document.querySelector('.seven').style.border = '2px solid orange';
+                document.querySelector('.eight').style.border = 'none';
+                document.querySelector('.nine').style.border = 'none';
+                ">7</button>
+                <button class="size-button eight" onclick="
+                document.querySelector('.six').style.border = 'none';
+                document.querySelector('.seven').style.border = 'none';
+                document.querySelector('.eight').style.border = '2px solid orange';
+                document.querySelector('.nine').style.border = 'none';
+                ">8</button>
+                <button class="size-button nine" onclick="
+                document.querySelector('.six').style.border = 'none';
+                document.querySelector('.seven').style.border = 'none';
+                document.querySelector('.eight').style.border = 'none';
+                document.querySelector('.nine').style.border = '2px solid orange';
+                ">9</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-10" onclick="addPinkSneakersToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--11th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/men-chino-pants-beige.jpg" style="width: 100%;height: 100%;" class="image-11">
+            </div>
+            <div class="product-text">
+                Men's Classic-fit Pleated Chino Pants
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">9017</div>
+            </div>
+            <div class="product-price">
+                $22.90
+            </div>
+            <div class="product-quantity">
+                <select class="kaki" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product">
+                <div class="color">Color</div>
+                <button class="blue-button beige" onclick="
+                document.querySelector('.image-11').src = 'images-for-project/men-chino-pants-beige.jpg';
+                document.querySelector('.beige').style.border = '2px solid orange';
+                document.querySelector('.green').style.border = 'none';
+                document.querySelector('.black').style.border = 'none';
+                ">Beige</button>
+                <button class="Red-button green" onclick="
+                document.querySelector('.image-11').src = 'images-for-project/men-chino-pants-green.jpg';
+                document.querySelector('.beige').style.border = 'none';
+                document.querySelector('.green').style.border = '2px solid orange';
+                document.querySelector('.black').style.border = 'none';
+                ">Green</button><br>
+                <button class="Red-button black" onclick="
+                document.querySelector('.image-11').src = 'images-for-project/men-chino-pants-black.jpg';
+                document.querySelector('.beige').style.border = 'none';
+                document.querySelector('.green').style.border = 'none';
+                document.querySelector('.black').style.border = '2px solid orange';
+                ">Black</button>
+
+                <div class="size">Size</div>
+                <button class="twin-button thirty" onclick="
+                document.querySelector('.thirty').style.border = '2px solid orange';
+                document.querySelector('.thirty-one').style.border = 'none';
+                document.querySelector('.thirty-two').style.border = 'none';
+                ">30</button>
+                <button class="queen-button thirty-one" onclick="
+                document.querySelector('.thirty').style.border = 'none';
+                document.querySelector('.thirty-one').style.border = '2px solid orange';
+                document.querySelector('.thirty-two').style.border = 'none';
+                ">31</button>
+                <button class="queen-button thirty-two" onclick="
+                document.querySelector('.thirty').style.border = 'none';
+                document.querySelector('.thirty-one').style.border = 'none';
+                document.querySelector('.thirty-two').style.border = '2px solid orange';
+                ">32</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-11" onclick="addKakiToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--12th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/men-cozy-fleece-zip-up-hoodie-red.jpg" style="width: 100%;height: 100%;" class="image-12">
+            </div>
+            <div class="product-text">
+                Men's Full-Zip Hooded Fleece Sweatshirt
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-5.png" style="height: 100%;">
+                <div class="rating-text">3157</div>
+            </div>
+            <div class="product-price">
+                $24.00
+            </div>
+            <div class="product-quantity">
+                <select class="redHoodie" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product">
+                <div class="color">Color</div>
+                <button class="blue-button forred" onclick="
+                document.querySelector('.image-12').src = 'images-for-project/men-cozy-fleece-zip-up-hoodie-red.jpg';
+                document.querySelector('.forred').style.border = '2px solid orange';
+                document.querySelector('#forblack').style.border = 'none';
+                ">Red</button>
+                <button class="Red-button black" id="forblack" onclick="
+                document.querySelector('.image-12').src = 'images-for-project/men-cozy-fleece-zip-up-hoodie-black.jpg';
+                document.querySelector('.forred').style.border = 'none';
+                document.querySelector('#forblack').style.border = '2px solid orange';
+                ">Black</button>
+
+                <div class="size">Size</div>
+                <button class="twin-button medium" onclick="
+                document.querySelector('.medium').style.border = '2px solid orange';
+                document.querySelector('.large').style.border = 'none';
+                document.querySelector('.xtra-large').style.border = 'none';
+                ">M</button>
+                <button class="queen-button large" onclick="
+                document.querySelector('.medium').style.border = 'none';
+                document.querySelector('.large').style.border = '2px solid orange';
+                document.querySelector('.xtra-large').style.border = 'none';
+                ">L</button>
+                <button class="queen-button xtra-large" onclick="
+                document.querySelector('.medium').style.border = 'none';
+                document.querySelector('.large').style.border = 'none';
+                document.querySelector('.xtra-large').style.border = '2px solid orange';
+                ">XL</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-12" onclick="addRedHoddieToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--13th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/men-golf-polo-t-shirt-blue.jpg" style="width: 100%;height: 100%;" class="image-13">
+            </div>
+            <div class="product-text">
+                Men's Regular-Fit Quick-Dry Golf Polo Shirt
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-45.png" style="height: 100%;">
+                <div class="rating-text">2556</div>
+            </div>
+            <div class="product-price">
+                $15.99
+            </div>
+            <div class="product-quantity">
+                <select class="polo" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product">
+                <div class="color">Color</div>
+                <button class="blue-button forbluepolo" onclick="
+                document.querySelector('.image-13').src = 'images-for-project/men-golf-polo-t-shirt-blue.jpg';
+                document.querySelector('.forbluepolo').style.border = '2px solid orange';
+                document.querySelector('.forblackpolo').style.border = 'none';
+                document.querySelector('.forredpolo').style.border = 'none';
+                ">Blue</button>
+                <button class="Red-button black forblackpolo" onclick="
+                document.querySelector('.image-13').src = 'images-for-project/men-golf-polo-t-shirt-black.jpg';
+                document.querySelector('.forbluepolo').style.border = 'none';
+                document.querySelector('.forblackpolo').style.border = '2px solid orange';
+                document.querySelector('.forredpolo').style.border = 'none';
+                ">Black</button>
+                <button class="Red-button forredpolo" onclick="
+                document.querySelector('.image-13').src = 'images-for-project/men-golf-polo-t-shirt-red.jpg';
+                document.querySelector('.forbluepolo').style.border = 'none';
+                document.querySelector('.forblackpolo').style.border = 'none';
+                document.querySelector('.forredpolo').style.border = '2px solid orange';
+                ">Red</button>
+
+                <div class="size">Size</div>
+                <button class="twin-button small" onclick="
+                document.querySelector('.small').style.border = '2px solid orange';
+                document.querySelector('.middle').style.border = 'none';
+                document.querySelector('.larger').style.border = 'none';
+                ">S</button>
+                <button class="queen-button middle" onclick="
+                document.querySelector('.small').style.border = 'none';
+                document.querySelector('.middle').style.border = '2px solid orange';
+                document.querySelector('.larger').style.border = 'none';
+                ">M</button>
+                <button class="queen-button larger" onclick="
+                document.querySelector('.small').style.border = 'none';
+                document.querySelector('.middle').style.border = 'none';
+                document.querySelector('.larger').style.border = '2px solid orange';
+                ">L</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button" onclick="addRegularPoloToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--14th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/plain-hooded-fleece-sweatshirt-yellow.jpg" style="width: 100%;height: 100%;" class="image-14">
+            </div>
+            <div class="product-text">
+                Plain Hooded Fleece Sweatshirt
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-5.png" style="height: 100%;">
+                <div class="rating-text">317</div>
+            </div>
+            <div class="product-price">
+                $24.00
+            </div>
+            <div class="product-quantity">
+                <select class="yellowHoodie" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product">
+                <div class="color">Color</div>
+                <button class="blue-button foryellowsweatshirt" onclick="
+                document.querySelector('.image-14').src = 'images-for-project/plain-hooded-fleece-sweatshirt-yellow.jpg';
+                document.querySelector('.foryellowsweatshirt').style.border = '2px solid orange';
+                document.querySelector('.fortealsweatshirt').style.border = 'none';
+                ">Yellow</button>
+                <button class="Red-button black fortealsweatshirt" onclick="
+                document.querySelector('.image-14').src = 'images-for-project/plain-hooded-fleece-sweatshirt-teal.jpg';
+                document.querySelector('.foryellowsweatshirt').style.border = 'none';
+                document.querySelector('.fortealsweatshirt').style.border = '2px solid orange';
+                ">Teal</button>
+
+                <div class="size">Size</div>
+                <button class="twin-button small1" onclick="
+                document.querySelector('.small1').style.border = '2px solid orange';
+                document.querySelector('.middle1').style.border = 'none';
+                document.querySelector('.larger1').style.border = 'none';
+                ">S</button>
+                <button class="queen-button middle1" onclick="
+                document.querySelector('.small1').style.border = 'none';
+                document.querySelector('.middle1').style.border = '2px solid orange';
+                document.querySelector('.larger1').style.border = 'none';
+                ">M</button>
+                <button class="queen-button larger1" onclick="
+                document.querySelector('.small1').style.border = 'none';
+                document.querySelector('.middle1').style.border = 'none';
+                document.querySelector('.larger1').style.border = '2px solid orange';
+                ">L</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button" onclick="addyellowHoodieToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--15th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/trash-can-with-foot-pedal-50-liter.jpg" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Trash Can with Foot Pedal - Brushed
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-45.png" style="height: 100%;">
+                <div class="rating-text">2286</div>
+            </div>
+            <div class="product-price">
+                $83.00
+            </div>
+            <div class="product-quantity">
+                <select class="trashcan" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product-2">
+                <div class="size">Size</div>
+                <button style="border: none;" class="size-button fiftyL" onclick="
+                document.querySelector('.fiftyL').style.border = '2px solid orange';
+                document.querySelector('.thirtyL').style.border = 'none';
+                ">50L</button>
+                <button style="border: none;" class="size-button thirtyL" onclick="
+                document.querySelector('.fiftyL').style.border = 'none';
+                document.querySelector('.thirtyL').style.border = '2px solid orange';
+                ">30L Tall</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-15" onclick="addTrashCanToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--16th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/women-chunky-beanie-gray.webp" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Women's Chunky Cable Beanie - Gray
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">83</div>
+            </div>
+            <div class="product-price">
+                $12.50
+            </div>
+            <div class="product-quantity">
+                <select class="beanie" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-16" onclick="addBeanieToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--17th product-->
+        <div class="product-details">
+            <div class="image-div" style="display: flex;align-items: center;justify-content: center;">
+                <img src="images-for-project/round-sunglasses-black.jpg" style="width: 100%;">
+            </div>
+            <div class="product-text">
+                Round Sunglasses
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">30</div>
+            </div>
+            <div class="product-price">
+                $15.60
+            </div>
+            <div class="product-quantity">
+                <select class="sunglasses" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-17" onclick="addSunglassesToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--18th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/electric-glass-and-steel-hot-water-kettle.webp" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Electric Glass and Steel Hot Tea Water Kettle
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-45.png" style="height: 100%;">
+                <div class="rating-text">846</div>
+            </div>
+            <div class="product-price">
+                $30.74
+            </div>
+            <div class="product-quantity">
+                <select class="kettle" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-18" onclick="addGlassKettleToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--19th product-->
+        <div class="product-details">
+            <div class="image-div" style="display: flex;align-items: center;justify-content: center;">
+                <img src="images-for-project/knit-athletic-sneakers-gray.jpg" style="width: 100%;">
+            </div>
+            <div class="product-text">
+                Waterproof Knit Athletic Sneakers - Gray
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">89</div>
+            </div>
+            <div class="product-price">
+                $33.90
+            </div>
+            <div class="product-quantity">
+                <select class="blackSneakers" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product-2">
+                <div class="size">Shoe size(US)</div>
+                <button class="size-button five five1" onclick="
+                document.querySelector('.five1').style.border = '2px solid orange';
+                document.querySelector('.six1').style.border = 'none';
+                document.querySelector('.seven1').style.border = 'none';
+                document.querySelector('.eight1').style.border = 'none';
+                document.querySelector('.nine1').style.border = 'none';
+                ">5</button>
+                <button class="size-button six six1" onclick="
+                document.querySelector('.five1').style.border = 'none';
+                document.querySelector('.six1').style.border = '2px solid orange';
+                document.querySelector('.seven1').style.border = 'none';
+                document.querySelector('.eight1').style.border = 'none';
+                document.querySelector('.nine1').style.border = 'none';
+                ">6</button>
+                <button class="size-button seven seven1" onclick="
+                document.querySelector('.five1').style.border = 'none';
+                document.querySelector('.six1').style.border = 'none';
+                document.querySelector('.seven1').style.border = '2px solid orange';
+                document.querySelector('.eight1').style.border = 'none';
+                document.querySelector('.nine1').style.border = 'none';
+                ">7</button>
+                <button class="size-button eight eight1" onclick="
+                document.querySelector('.five1').style.border = 'none';
+                document.querySelector('.six1').style.border = 'none';
+                document.querySelector('.seven1').style.border = 'none';
+                document.querySelector('.eight1').style.border = '2px solid orange';
+                document.querySelector('.nine1').style.border = 'none';
+                ">8</button>
+                <button class="size-button nine nine1" onclick="
+                document.querySelector('.five1').style.border = 'none';
+                document.querySelector('.six1').style.border = 'none';
+                document.querySelector('.seven1').style.border = 'none';
+                document.querySelector('.eight1').style.border = 'none';
+                document.querySelector('.nine1').style.border = '2px solid orange';
+                ">9</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-19" onclick="addBlackSneakersToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!--20th product-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/liquid-laundry-detergent-plain.jpg" style="width: 80%;height: 100%;" class="image-20">
+            </div>
+            <div class="product-text">
+                Liquid Laundry Detergent, 110 Loadsoap
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">305</div>
+            </div>
+            <div class="product-price">
+                $28.99
+            </div>
+            <div class="product-quantity">
+                <select class="liquidSoap" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product-2">
+                <div class="size">Style</div>
+                <button style="cursor: pointer;" class="size-button five forplainliquidsoap" onclick="
+                document.querySelector('.image-20').src = 'images-for-project/liquid-laundry-detergent-plain.jpg';
+                document.querySelector('.forplainliquidsoap').style.border = '2px solid orange';
+                document.querySelector('.forlavenderliquidsoap').style.border = 'none';
+                ">Plain</button>
+                <button style="cursor: pointer;" class="size-button six forlavenderliquidsoap" onclick="
+                document.querySelector('.image-20').src = 'images-for-project/liquid-laundry-detergent-lavender.jpg';
+                document.querySelector('.forplainliquidsoap').style.border = 'none';
+                document.querySelector('.forlavenderliquidsoap').style.border = '2px solid orange';
+                ">Lavender</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-20" onclick="addLiquidSoapToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+
+        <!--21-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/countertop-blender-64-oz.jpg" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Countertop Blender - 64oz, 1400 Watts
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-45.png" style="height: 100%;">
+                <div class="rating-text">3</div>
+            </div>
+            <div class="product-price">
+                $107.47
+            </div>
+            <div class="product-quantity">
+                <select class="blender" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-21" onclick="addBlenderToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+
+        <!--22-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/vanity-mirror-silver.jpg" style="width: 70%;height: 95%;">
+            </div>
+            <div class="product-text">
+                Vanity Mirror with Heavy Base - Chrome
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">130</div>
+            </div>
+            <div class="product-price">
+                $16.49
+            </div>
+            <div class="product-quantity">
+                <select class="mirror" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-22" onclick="addMirrorToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+
+        <!--23-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/women-french-terry-fleece-jogger-gray.jpg" style="width: 100%;height: 100%;" class="image-23">
+            </div>
+            <div class="product-text">
+                Women's Fleece Jogger Sweatpant
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-4.png" style="height: 100%;">
+                <div class="rating-text">248</div>
+            </div>
+            <div class="product-price">
+                $24.00
+            </div>
+            <div class="product-quantity">
+                <select class="women-jogger" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+
+            <div class="specific-product">
+                <div class="color">Color</div>
+                <button class="blue-button forcamowomenjoggers" onclick="
+                document.querySelector('.image-23').src = 'images-for-project/women-french-terry-fleece-jogger-camo.jpg';
+                document.querySelector('.forcamowomenjoggers').style.border = '2px solid orange';
+                document.querySelector('.forgraywomenjoggers').style.border = 'none';
+                ">Camo</button>
+                <button class="Red-button black forgraywomenjoggers" onclick="
+                document.querySelector('.image-23').src = 'images-for-project/women-french-terry-fleece-jogger-gray.jpg';
+                document.querySelector('.forcamowomenjoggers').style.border = 'none';
+                document.querySelector('.forgraywomenjoggers').style.border = '2px solid orange';
+                ">Gray</button>
+
+                <div class="size">Size</div>
+                <button class="twin-button small2" onclick="
+                document.querySelector('.small2').style.border = '2px solid orange';
+                document.querySelector('.medium2').style.border = 'none';
+                document.querySelector('.large2').style.border = 'none';
+                ">S</button>
+                <button class="queen-button medium2" onclick="
+                document.querySelector('.small2').style.border = 'none';
+                document.querySelector('.medium2').style.border = '2px solid orange';
+                document.querySelector('.large2').style.border = 'none';
+                ">M</button>
+                <button class="queen-button large2" onclick="
+                document.querySelector('.small2').style.border = 'none';
+                document.querySelector('.medium2').style.border = 'none';
+                document.querySelector('.large2').style.border = '2px solid orange';
+                ">L</button>
+            </div>
+
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-23" onclick="addWomenJoggersToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+
+        <!--24-->
+        <div class="product-details">
+            <div class="image-div">
+                <img src="images-for-project/coffeemaker-with-glass-carafe-black.jpg" style="width: 100%;height: 100%;">
+            </div>
+            <div class="product-text">
+                Coffeemaker with Glass Carafe and Reusable Filter - 25 Oz, Black
+            </div>
+            <div class="product-rating">
+                <img src="images-for-project/rating-5.png" style="height: 100%;">
+                <div class="rating-text">1211</div>
+            </div>
+            <div class="product-price">
+                $22.50
+            </div>
+            <div class="product-quantity">
+                <select class="coffeemaker" name="Quantity" id="Quantity">
+                    <option  value="1">1</option>
+                    <option  value="2">2</option>
+                    <option  value="3">3</option>
+                    <option  value="4">4</option>
+                    <option  value="5">5</option>
+                </select>
+            </div>
+            <div class="for-Js-text-added"></div>
+            <div class="for-button">
+                <button class="add-button add-button-24" onclick="addCoffeeMakerToCart()
+                ">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="amazon.js"></script>
+</body>
+</html>
