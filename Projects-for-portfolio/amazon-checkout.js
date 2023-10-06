@@ -63,13 +63,13 @@
 
 
                 forOrdersElement.innerHTML = `
-                <div class="product-details-for-checkout js-${CartItemsArray[0][i].Itemname}">
+                <div class="product-details-for-checkout js-${CartItemsArray[0][i].Itemname}" style="padding-bottom: 0.7rem;">
                 <div class="just-for-css-styling" style="margin-top: 0.5rem;margin-left: 2rem;margin-bottom: 0.5rem;font-weight: bold;font-size: 1.3rem;color: green;">Delivery date: <div class="${CartItemsArray[0][i].deliveryText}" style="display: inline-block;"> Friday, September 8 </div>
                 </div>
                 <div class="for-the-product">
                     <div class="for-the-product-details">
                         <div class="for-product-image">
-                            <img src='images-for-project/round-sunglasses-black.jpg' style="width: 45%;" class="item-product-image">
+                            <img src='images-for-project/round-sunglasses-black.jpg' style="width: 45%;object-fit:contain;" class="item-product-image">
                         </div>
                         <div>
                             <div class="for-product-name">Black and Gray Athletic Cotton Socks - 6 Pairs</div>
