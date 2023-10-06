@@ -17,8 +17,14 @@
             </a>
         </div>
         <div class="middle-section">
-            <input type="text" placeholder="Search" class="input-search-box">
-            <button class="search-button"><img src="images-for-project/search-icon.png" style="height: 80%;"></button>
+            <input type="text" placeholder="Search" class="input-search-box" onkeydown="
+            if(event.key === 'Enter'){
+                searchProduct();
+            };
+            ">
+            <button class="search-button" onclick="searchProduct()">
+                <img src="images-for-project/search-icon.png" style="height: 80%;">
+            </button>
         </div>
         <div class="right-section">
             <a href="amazon-orders.html" style="text-decoration: none;color: white;">
