@@ -4,6 +4,7 @@ let CartQuantity = 0;
 let theItems = [
 {
     Itemname: 'Socks',
+    ItemClassName: 'socks',
     nameForDelivery: 'Socks-delivery',
     deliveryText: 'forSocks',
     deliveryValue: 0,
@@ -13,10 +14,14 @@ let theItems = [
     ItemIndex: 0,
     ItemQuantity: 0,
     ItemPrice: 10.90,
-    ItemKeyword: ['Socks', 'Cotton', 'Black'],
-    ItemSrc: 'images-for-project/athletic-cotton-socks-6-pairs.jpg'
+    ItemKeyword: ['socks', 'cotton', 'black'],
+    ItemSrc: 'images-for-project/athletic-cotton-socks-6-pairs.jpg',
+    rating: 4.5,
+    noOfRating: 87,
+    ratingSrc: 'images-for-project/rating-45.png'
 }, {
-    Itemname: 'Tshirts',
+    Itemname: 'Tshirt',
+    ItemClassName: 'tshirt',
     nameForDelivery: 'Tshirts-delivery',
     deliveryText: 'forTshirt',
     deliveryValue: 0,
@@ -26,10 +31,14 @@ let theItems = [
     ItemIndex: 1,
     ItemQuantity: 0,
     ItemPrice: 7.99,
-    ItemKeyword: ['Tshirt', 'plain', 'Cotton'],
-    ItemSrc: 'images-for-project/adults-plain-cotton-tshirt-2-pack-teal.jpg'
+    ItemKeyword: ['tshirt', 'plain', 'cotton'],
+    ItemSrc: 'images-for-project/adults-plain-cotton-tshirt-2-pack-teal.jpg',
+    rating: 4.5,
+    noOfRating: 56,
+    ratingSrc: 'images-for-project/rating-45.png'
 }, {
     Itemname: 'RugMat',
+    ItemClassName: 'rug',
     nameForDelivery: 'Rugmat-delivery',
     deliveryText: 'forRug',
     deliveryValue: 0,
@@ -39,10 +48,14 @@ let theItems = [
     ItemIndex: 2,
     ItemQuantity: 0,
     ItemPrice: 12.50,
-    ItemKeyword: ['Mat', 'Bathroom', 'Rug'],
-    ItemSrc: 'images-for-project/bathroom-rug.jpg'
+    ItemKeyword: ['mat', 'bathroom', 'rug'],
+    ItemSrc: 'images-for-project/bathroom-rug.jpg',
+    rating: 4,
+    noOfRating: 119,
+    ratingSrc: 'images-for-project/rating-4.png'
 },{
     Itemname: 'Curtains',
+    ItemClassName: 'curtain',
     nameForDelivery: 'Curtains-delivery',
     deliveryText: 'forCurtains',
     deliveryValue: 0,
@@ -52,10 +65,14 @@ let theItems = [
     ItemIndex: 3,
     ItemQuantity: 0,
     ItemPrice: 45.99,
-    ItemKeyword: ['Curtains', 'Blackout'],
-    ItemSrc: 'images-for-project/blackout-curtain-set-beige.webp'
+    ItemKeyword: ['curtains', 'curtain', 'beige'],
+    ItemSrc: 'images-for-project/blackout-curtain-set-beige.webp',
+    rating: 5,
+    noOfRating: 232,
+    ratingSrc: 'images-for-project/rating-5.png'
 }, {
     Itemname: 'BlackCurtains',
+    ItemClassName: 'blackCurtains',
     nameForDelivery: 'Black-delivery',
     deliveryText: 'forBlackCurtains',
     deliveryValue: 0,
@@ -65,10 +82,14 @@ let theItems = [
     ItemIndex: 4,
     ItemQuantity: 0,
     ItemPrice: 30.99,
-    ItemKeyword: ['Curtains', 'Black', 'Blackout'],
-    ItemSrc: 'images-for-project/blackout-curtains-black.jpg'
+    ItemKeyword: ['curtains', 'black', 'curtain'],
+    ItemSrc: 'images-for-project/blackout-curtains-black.jpg',
+    rating: 5,
+    noOfRating: 363,
+    ratingSrc: 'images-for-project/rating-5.png'
 }, {
     Itemname: 'Towel',
+    ItemClassName: 'towels',
     nameForDelivery: 'towel-delivery',
     deliveryText: 'forTowel',
     deliveryValue: 0,
@@ -78,10 +99,14 @@ let theItems = [
     ItemIndex: 5,
     ItemQuantity: 0,
     ItemPrice: 35.99,
-    ItemKeyword: ['Towel', 'Bathing'],
-    ItemSrc: 'images-for-project/luxury-tower-set-6-piece.jpg'
+    ItemKeyword: ['towel', 'bathing', 'bathing towel'],
+    ItemSrc: 'images-for-project/luxury-tower-set-6-piece.jpg',
+    rating: 4.5,
+    noOfRating: 144,
+    ratingSrc: 'images-for-project/rating-45.png'
 }, {
     Itemname: 'Earrings',
+    ItemClassName: 'earrings',
     nameForDelivery: 'earrings-delivery',
     deliveryText: 'forEarrings',
     deliveryValue: 0,
@@ -91,10 +116,14 @@ let theItems = [
     ItemIndex: 6,
     ItemQuantity: 0,
     ItemPrice: 24.00,
-    ItemKeyword: ['Earrings', 'French', 'Earring'],
-    ItemSrc: 'images-for-project/double-elongated-twist-french-wire-earrings.webp'
+    ItemKeyword: ['earrings', 'french', 'earring'],
+    ItemSrc: 'images-for-project/double-elongated-twist-french-wire-earrings.webp',
+    rating: 4,
+    noOfRating: 117,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
     Itemname: 'Duvet',
+    ItemClassName: 'duvet',
     nameForDelivery: 'duvet-delivery',
     deliveryText: 'forDuvet',
     deliveryValue: 0,
@@ -104,10 +133,14 @@ let theItems = [
     ItemIndex: 7,
     ItemQuantity: 0,
     ItemPrice: 23.99,
-    ItemKeyword: ['Duvet', 'Bed Cover', 'Cover'],
-    ItemSrc: 'images-for-project/duvet-cover-set-blue-twin.jpg'
+    ItemKeyword: ['duvet', 'bed cover', 'cover'],
+    ItemSrc: 'images-for-project/duvet-cover-set-blue-twin.jpg',
+    rating: 5,
+    noOfRating: 456,
+    ratingSrc: 'images-for-project/rating-5.png'
 }, {
     Itemname: 'Tissue',
+    ItemClassName: 'tissue',
     nameForDelivery: 'tissue-delivery',
     deliveryText: 'forTissue',
     deliveryValue: 0,
@@ -117,10 +150,14 @@ let theItems = [
     ItemIndex: 8,
     ItemQuantity: 0,
     ItemPrice: 57.99,
-    ItemKeyword: ['Tissue', 'Paper Towel'],
-    ItemSrc: 'images-for-project/kitchen-paper-towels-30-pack.jpg'
+    ItemKeyword: ['tissue','paper' ,'paper towel'],
+    ItemSrc: 'images-for-project/kitchen-paper-towels-30-pack.jpg',
+    rating: 4.5,
+    noOfRating: 1045,
+    ratingSrc: 'images-for-project/rating-45.png'
 }, {
     Itemname: 'PinkSneakers',
+    ItemClassName: 'pinkSneakers',
     nameForDelivery: 'pinksneakers-delivery',
     deliveryText: 'forPinkSneakers',
     deliveryValue: 0,
@@ -130,10 +167,14 @@ let theItems = [
     ItemIndex: 9,
     ItemQuantity: 0,
     ItemPrice: 33.90,
-    ItemKeyword: ['Sneakers', 'Athlethic', 'Waterproof'],
-    ItemSrc: 'images-for-project/knit-athletic-sneakers-pink.webp'
+    ItemKeyword: ['sneakers', 'athlethic', 'waterproof'],
+    ItemSrc: 'images-for-project/knit-athletic-sneakers-pink.webp',
+    rating: 4,
+    noOfRating: 89,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
     Itemname: 'Kaki',
+    ItemClassName: 'kaki',
     nameForDelivery: 'kaki-delivery',
     deliveryText: 'forkaki',
     deliveryValue: 0,
@@ -143,10 +184,14 @@ let theItems = [
     ItemIndex: 10,
     ItemQuantity: 0,
     ItemPrice: 22.90,
-    ItemKeyword: ['Kaki', 'Chino', 'Pants'],
-    ItemSrc: 'images-for-project/men-chino-pants-beige.jpg'
+    ItemKeyword: ['kaki', 'chino', 'pants'],
+    ItemSrc: 'images-for-project/men-chino-pants-beige.jpg',
+    rating: 4,
+    noOfRating: 9017,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
-    Itemname: 'RedHoodie',
+    Itemname: 'RedHoddie',
+    ItemClassName: 'redHoodie',
     nameForDelivery: 'redhoodie-delivery',
     deliveryText: 'forRedHoodie',
     deliveryValue: 0,
@@ -156,10 +201,14 @@ let theItems = [
     ItemIndex: 11,
     ItemQuantity: 0,
     ItemPrice: 24.00,
-    ItemKeyword: ['Hoodie', 'Sweatshirt'],
-    ItemSrc: 'images-for-project/men-cozy-fleece-zip-up-hoodie-red.jpg'
+    ItemKeyword: ['hoodie', 'sweatshirt'],
+    ItemSrc: 'images-for-project/men-cozy-fleece-zip-up-hoodie-red.jpg',
+    rating: 5,
+    noOfRating: 3157,
+    ratingSrc: 'images-for-project/rating-5.png'
 }, {
     Itemname: 'RegularPolo',
+    ItemClassName: 'polo',
     nameForDelivery: 'polo-delivery',
     deliveryText: 'forPolo',
     deliveryValue: 0,
@@ -169,10 +218,14 @@ let theItems = [
     ItemIndex: 12,
     ItemQuantity: 0,
     ItemPrice: 15.99,
-    ItemKeyword: ['Polo', 'Golf', 'Mens'],
-    ItemSrc: 'images-for-project/men-golf-polo-t-shirt-blue.jpg'
+    ItemKeyword: ['polo', 'golf', 'mens'],
+    ItemSrc: 'images-for-project/men-golf-polo-t-shirt-blue.jpg',
+    rating: 4.5,
+    noOfRating: 2556,
+    ratingSrc: 'images-for-project/rating-45.png'
 }, {
-    Itemname: 'YellowHoodie',
+    Itemname: 'yellowHoodie',
+    ItemClassName: 'yellowHoodie',
     nameForDelivery: 'yellowhoodie-delivery',
     deliveryText: 'forYellowHoodie',
     deliveryValue: 0,
@@ -182,10 +235,14 @@ let theItems = [
     ItemIndex: 13,
     ItemQuantity: 0,
     ItemPrice: 24.00,
-    ItemKeyword: ['Hoodie', 'Sweatshirt'],
-    ItemSrc: 'images-for-project/plain-hooded-fleece-sweatshirt-yellow.jpg'
+    ItemKeyword: ['hoodie', 'sweatshirt'],
+    ItemSrc: 'images-for-project/plain-hooded-fleece-sweatshirt-yellow.jpg',
+    rating: 5,
+    noOfRating: 317,
+    ratingSrc: 'images-for-project/rating-5.png'
 }, {
     Itemname: 'TrashCan',
+    ItemClassName: 'trashcan',
     nameForDelivery: 'trash-delivery',
     deliveryText: 'forTrashcan',
     deliveryValue: 0,
@@ -195,10 +252,14 @@ let theItems = [
     ItemIndex: 14,
     ItemQuantity: 0,
     ItemPrice: 83.00,
-    ItemKeyword: ['Trash','Can'],
-    ItemSrc: 'images-for-project/trash-can-with-foot-pedal-50-liter.jpg'
+    ItemKeyword: ['trash','can', 'trashcan'],
+    ItemSrc: 'images-for-project/trash-can-with-foot-pedal-50-liter.jpg',
+    rating: 4.5,
+    noOfRating: 2286,
+    ratingSrc: 'images-for-project/rating-45.png'
 }, {
     Itemname: 'Beanie',
+    ItemClassName: 'beanie',
     nameForDelivery: 'beanie-delivery',
     deliveryText: 'forBeanie',
     deliveryValue: 0,
@@ -208,10 +269,14 @@ let theItems = [
     ItemIndex: 15,
     ItemQuantity: 0,
     ItemPrice: 12.50,
-    ItemKeyword: ['Beanie', 'women', 'cable'],
-    ItemSrc: 'images-for-project/women-chunky-beanie-gray.webp'
+    ItemKeyword: ['beanie', 'women', 'cable'],
+    ItemSrc: 'images-for-project/women-chunky-beanie-gray.webp',
+    rating: 4,
+    noOfRating: 83,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
     Itemname: 'Sunglasses',
+    ItemClassName: 'sunglasses',
     nameForDelivery: 'sunglasses-delivery',
     deliveryText: 'forSunglasses',
     deliveryValue: 0,
@@ -221,10 +286,14 @@ let theItems = [
     ItemIndex: 16,
     ItemQuantity: 0,
     ItemPrice: 15.60,
-    ItemKeyword: ['Sunglasses'],
-    ItemSrc: 'images-for-project/round-sunglasses-black.jpg'
+    ItemKeyword: ['sunglasses', 'glasses', 'eye glass'],
+    ItemSrc: 'images-for-project/round-sunglasses-black.jpg',
+    rating: 4,
+    noOfRating: 30,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
     Itemname: 'GlassKettle',
+    ItemClassName: 'kettle',
     nameForDelivery: 'kettle-delivery',
     deliveryText: 'forKettle',
     deliveryValue: 0,
@@ -235,9 +304,13 @@ let theItems = [
     ItemQuantity: 0,
     ItemPrice: 30.74,
     ItemKeyword: ['kettle', 'electric', 'steel'],
-    ItemSrc: 'images-for-project/electric-glass-and-steel-hot-water-kettle.webp'
+    ItemSrc: 'images-for-project/electric-glass-and-steel-hot-water-kettle.webp',
+    rating: 4.5,
+    noOfRating: 846,
+    ratingSrc: 'images-for-project/rating-45.png'
 }, {
     Itemname: 'BlackSneakers',
+    ItemClassName: 'blackSneakers',
     nameForDelivery: 'blacksneakers-delivery',
     deliveryText: 'forBlackSneakers',
     deliveryValue: 0,
@@ -247,10 +320,14 @@ let theItems = [
     ItemIndex: 18,
     ItemQuantity: 0,
     ItemPrice: 33.90,
-    ItemKeyword: ['Sneakers', 'waterproof', 'Athletic'],
-    ItemSrc: 'images-for-project/knit-athletic-sneakers-gray.jpg'
+    ItemKeyword: ['sneakers', 'waterproof', 'athletic'],
+    ItemSrc: 'images-for-project/knit-athletic-sneakers-gray.jpg',
+    rating: 4,
+    noOfRating: 89,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
     Itemname: 'LiquidSoap',
+    ItemClassName: 'liquidSoap',
     nameForDelivery: 'liquidsoap-delivery',
     deliveryText: 'forLiquidSoap',
     deliveryValue: 0,
@@ -260,10 +337,14 @@ let theItems = [
     ItemIndex: 19,
     ItemQuantity: 0,
     ItemPrice: 28.99,
-    ItemKeyword: ['Detergent', 'Soap', 'laundry'],
-    ItemSrc: 'images-for-project/liquid-laundry-detergent-plain.jpg'
+    ItemKeyword: ['detergent', 'soap', 'laundry'],
+    ItemSrc: 'images-for-project/liquid-laundry-detergent-plain.jpg',
+    rating: 4,
+    noOfRating: 305,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
     Itemname: 'Blender',
+    ItemClassName: 'blender',
     nameForDelivery: 'blender-delivery',
     deliveryText: 'forBlender',
     deliveryValue: 0,
@@ -273,10 +354,14 @@ let theItems = [
     ItemIndex: 20,
     ItemQuantity: 0,
     ItemPrice: 107.47,
-    ItemKeyword: ['Blender'],
-    ItemSrc: 'images-for-project/countertop-blender-64-oz.jpg'
+    ItemKeyword: ['blender'],
+    ItemSrc: 'images-for-project/countertop-blender-64-oz.jpg',
+    rating: 4.5,
+    noOfRating: 3,
+    ratingSrc: 'images-for-project/rating-45.png'
 }, {
     Itemname: 'Mirror',
+    ItemClassName: 'mirror',
     nameForDelivery: 'mirror-delivery',
     deliveryText: 'forMirror',
     deliveryValue: 0,
@@ -286,10 +371,14 @@ let theItems = [
     ItemIndex: 21,
     ItemQuantity: 0,
     ItemPrice: 16.49,
-    ItemKeyword: ['Mirror', 'Vanity'],
-    ItemSrc: 'images-for-project/vanity-mirror-silver.jpg'
+    ItemKeyword: ['mirror', 'vanity'],
+    ItemSrc: 'images-for-project/vanity-mirror-silver.jpg',
+    rating: 4,
+    noOfRating: 130,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
     Itemname: 'WomenJoggers',
+    ItemClassName: 'women-jogger',
     nameForDelivery: 'womenJoggers-delivery',
     deliveryText: 'forWomenJogger',
     deliveryValue: 0,
@@ -299,10 +388,14 @@ let theItems = [
     ItemIndex: 22,
     ItemQuantity: 0,
     ItemPrice: 24.00,
-    ItemKeyword: ['Jogger', 'Sweatpants'],
-    ItemSrc: 'images-for-project/women-french-terry-fleece-jogger-gray.jpg'
+    ItemKeyword: ['jogger', 'sweatpants', 'joggers'],
+    ItemSrc: 'images-for-project/women-french-terry-fleece-jogger-gray.jpg',
+    rating: 4,
+    noOfRating: 248,
+    ratingSrc: 'images-for-project/rating-4.png'
 }, {
-    Itemname: 'Coffeemaker',
+    Itemname: 'CoffeeMaker',
+    ItemClassName: 'coffeemaker',
     nameForDelivery: 'Coffeemaker-delivery',
     deliveryText: 'forCoffemaker',
     deliveryValue: 0,
@@ -312,42 +405,91 @@ let theItems = [
     ItemIndex: 23,
     ItemQuantity: 0,
     ItemPrice: 22.50,
-    ItemKeyword: ['Coffeemaker'],
-    ItemSrc: 'images-for-project/coffeemaker-with-glass-carafe-black.jpg'
+    ItemKeyword: ['coffeemaker', 'coffee'],
+    ItemSrc: 'images-for-project/coffeemaker-with-glass-carafe-black.jpg',
+    rating: 5,
+    noOfRating: 1211,
+    ratingSrc: 'images-for-project/rating-5.png'
 }];
 
 
+function searchProduct(){
 
-// function searchProduct(){
+    let lowerCaseInputValue = String(document.querySelector('.input-search-box').value).toLowerCase();
+    
+    let searchBoxValue = lowerCaseInputValue;
+    
+    let searchProductsToBeAdded = ``;
 
-//     let searchBoxValue = document.querySelector('.input-search-box').value;
-//     console.log(searchBoxValue, 'is the input value');
+    for(let i = 0; i < 24; i++){
 
-//     for(let i = 0; i < 24; i++){
+        let x = 3;
+        if((searchBoxValue === theItems[i].ItemKeyword[x - x]) || (searchBoxValue === theItems[i].ItemKeyword[x - (x - 1)]) || (searchBoxValue === theItems[i].ItemKeyword[x - (x - 2)])){
 
-//         let x = 3;
-//         if((searchBoxValue === theItems[i].ItemKeyword[x - x]) || (searchBoxValue === theItems[i].ItemKeyword[x - (x - 1)]) || (searchBoxValue === theItems[i].ItemKeyword[x - (x - 2)])){
-//             console.log(searchBoxValue, theItems[i].ItemKeyword);
-//         }else{
-//             console.log('not the same');
-//         }
-//     }
 
-// }
+            let searchProductValueHTML = document.querySelector('.container-for-all-products');
+            searchProductValueHTML.innerHTML = `
+                <div class="product-details js-product-details-${theItems[i].ItemIndex}">
+                    <div class="image-div">
+                        <img src='images-for-project/athletic-cotton-socks-6-pairs.jpg' style="width: 100%;height: 100%;object-fit: contain;" class="image-for-this-search-product js-image-for-this-search-product-${theItems[i].ItemIndex}">
+                    </div>
+                    <div class="product-text js-product-text-${theItems[i].ItemIndex}">
+                        Black and Gray Athletic Cotton Socks - 6 Pairs
+                    </div>
+                    <div class="product-rating">
+                        <img src='images-for-project/rating-45.png' style="height: 100%;" class="rating-image js-rating-image-${theItems[i].ItemIndex}">
+                        <div class="rating-text js-rating-text-${theItems[i].ItemIndex}">87</div>
+                    </div>
+                    <div class="product-price js-product-price-${theItems[i].ItemIndex}">
+                        $10.90
+                    </div>
+                    <div class="product-quantity">
+                        <select class="${theItems[i].ItemClassName}" name="Quantity" id="Quantity">
+                            <option  value="1">1</option>
+                            <option  value="2">2</option>
+                            <option  value="3">3</option>
+                            <option  value="4">4</option>
+                            <option  value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="for-Js-text-added js-for-text-added-${theItems[i].ItemIndex}"></div>
+                    <div class="for-button">
+                        <button class="add-button" onclick="add${theItems[i].Itemname}ToCart()">Add to Cart</button>
+                    </div>
+                </div>
+            `;
+
+            
+            document.querySelector('.image-for-this-search-product').src = theItems[i].ItemSrc;
+            document.querySelector('.product-text').innerHTML = theItems[i].ProductItemname;
+            document.querySelector('.product-price').innerHTML = `$${theItems[i].ItemPrice}`;
+            document.querySelector('.rating-image').src = theItems[i].ratingSrc;
+            document.querySelector('.rating-text').innerHTML = theItems[i].noOfRating;
+
+            document.querySelector('.product-details').style.border = 'border: 3px solid lightgray';
+            document.querySelector('.product-details').style.padding = '1rem';
+
+            searchProductsToBeAdded = searchProductsToBeAdded + searchProductValueHTML.innerHTML;
+            document.querySelector('.container-for-all-products').innerHTML = searchProductsToBeAdded;
+        }
+    }
+
+}
 
 function Dropdownlist(){
     document.querySelector('.hamburger-exit-image').style.display = 'block';
     document.querySelector('.hamburger-image').style.display = 'none';
     document.getElementById('dropdown-info').style.display = 'block';
     document.getElementById('body').style.paddingTop = '7rem';
+
     document.querySelector('.cart-notification').style.display = 'none';
 }
 function exitDropdownlist(){
     document.querySelector('.hamburger-exit-image').style.display = 'none';
     document.querySelector('.hamburger-image').style.display = 'block';
     document.getElementById('dropdown-info').style.display = 'none';
-    document.getElementById('body').style.paddingTop = '0.5rem'; 
-    
+    document.getElementById('body').style.paddingTop = '0.5rem';
+
     if(CartQuantity > 0){
         document.querySelector('.cart-notification').style.display = 'block';
     }else{
@@ -416,6 +558,7 @@ function addCurtainsToCart(){
     document.querySelector('.number-of-items-in-cart').innerHTML = `${CartQuantity}`;
 
     document.querySelector('.for-cart').innerHTML = `Cart(${CartQuantity})`;
+
     document.querySelector('.cart-notification').style.display = 'block';
 
     // let displayAddedText = setInterval(()=>{
