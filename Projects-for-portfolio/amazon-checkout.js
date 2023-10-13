@@ -32,22 +32,22 @@
             document.querySelector('.total-amount').innerHTML = totalOrder;
         }
 
-        let MondayOctoberninth = {
+        let FridayOctobertwentieth = {
             year: 2023,
             month: 9,
-            date: 9
+            date: 20
         };
 
-        let FridayOctoberthirteenth = {
+        let TuesdayOctobertwentyfourth = {
             year: 2023,
             month: 9,
-            date: 13
+            date: 24
         };
 
-        let WednesdayOctobereighteenth = {
+        let MondayOctoberthirtieth = {
             year: 2023,
             month: 9,
-            date: 18
+            date: 30
         };
 
         let newForOrdersHTML = ``;
@@ -164,7 +164,7 @@
 
                                     CartItemsArray[0][Itemid].deliveryDate = document.querySelector('.${CartItemsArray[0][i].deliveryText}').innerHTML;
 
-                                    CartItemsArray[0][Itemid].deliveryDateNumber = '${WednesdayOctobereighteenth.year} ${WednesdayOctobereighteenth.month} ${WednesdayOctobereighteenth.date}';
+                                    CartItemsArray[0][Itemid].deliveryDateNumber = '${MondayOctoberthirtieth.year} ${MondayOctoberthirtieth.month} ${MondayOctoberthirtieth.date}';
 
                                     CartItemsArray[0][Itemid].deliveryValue = Math.round(Number(document.querySelector('.monday-shipping-value-${CartItemsArray[0][i].ItemIndex}').innerHTML));
 
@@ -187,7 +187,7 @@
                                     ">
                             </div>
                             <div>
-                                <div class="date-for-free-shipping">Wednesday, October 18</div>
+                                <div class="date-for-free-shipping">Monday, October 30</div>
                                 <div class="for-free-shipping">FREE <span class="monday-shipping-value-${CartItemsArray[0][i].ItemIndex}" style="display:none;">0</span> Shipping</div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
 
                                 CartItemsArray[0][Itemid].deliveryDate = document.querySelector('.${CartItemsArray[0][i].deliveryText}').innerHTML;
 
-                                CartItemsArray[0][Itemid].deliveryDateNumber = '${FridayOctoberthirteenth.year} ${FridayOctoberthirteenth.month} ${FridayOctoberthirteenth.date}';
+                                CartItemsArray[0][Itemid].deliveryDateNumber = '${TuesdayOctobertwentyfourth.year} ${TuesdayOctobertwentyfourth.month} ${TuesdayOctobertwentyfourth.date}';
 
                                 CartItemsArray[0][Itemid].deliveryValue = Math.round(Number(document.querySelector('.tuesday-shipping-value-${CartItemsArray[0][i].ItemIndex}').innerHTML));
 
@@ -223,7 +223,7 @@
                                 " class="delivery-selectors-${CartItemsArray[0][i].ItemIndex}">
                             </div>
                             <div>
-                                <div class="date-for-tuesday-shipping">Friday, October 13</div>
+                                <div class="date-for-tuesday-shipping">Tuesday, October 24</div>
                                 <div class="for-tuesday-shipping">$<span class="tuesday-shipping-value-${CartItemsArray[0][i].ItemIndex}">4.99</span> - Shipping</div>
                             </div>
                         </div>
@@ -237,7 +237,7 @@
 
                                 CartItemsArray[0][Itemid].deliveryDate = document.querySelector('.${CartItemsArray[0][i].deliveryText}').innerHTML;
 
-                                CartItemsArray[0][Itemid].deliveryDateNumber = '${MondayOctoberninth.year} ${MondayOctoberninth.month} ${MondayOctoberninth.date}';
+                                CartItemsArray[0][Itemid].deliveryDateNumber = '${FridayOctobertwentieth.year} ${FridayOctobertwentieth.month} ${FridayOctobertwentieth.date}';
 
                                 CartItemsArray[0][Itemid].deliveryValue = Math.round(Number(document.querySelector('.friday-shipping-value-${CartItemsArray[0][i].ItemIndex}').innerHTML));
 
@@ -260,7 +260,7 @@
                                 " class="delivery-selectors-${CartItemsArray[0][i].ItemIndex}">
                             </div>
                             <div>
-                                <div class="date-for-friday-shipping">Monday, October 9</div>
+                                <div class="date-for-friday-shipping">Friday, October 20</div>
                                 <div class="for-friday-shipping">$<span class="friday-shipping-value-${CartItemsArray[0][i].ItemIndex}">9.99</span> - Shipping</div>
                             </div>
                         </div>
