@@ -14,12 +14,12 @@ function exitDropdownlist(){
 
 function trackPackage(itemId){
     
-    if(updatedCartArray[0][itemId].deliveryDateNumber === "2023 9 18"){
+    if(updatedCartArray[0][itemId].deliveryDateNumber === "2023 9 30"){
 
         const dayOfYear = date => Math.floor((date - new Date(date.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
 
 
-        let deliverydate = dayOfYear(new Date(2023, 9, 18));
+        let deliverydate = dayOfYear(new Date(2023, 9, 30));
 
         let aYear = new Date().getFullYear();
         let aMonth = new Date().getMonth();
@@ -77,12 +77,12 @@ function trackPackage(itemId){
         }
 
     }
-    if(updatedCartArray[0][itemId].deliveryDateNumber === "2023 9 13"){
+    if(updatedCartArray[0][itemId].deliveryDateNumber === "2023 9 24"){
 
         const dayOfYear = date => Math.floor((date - new Date(date.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
 
 
-        let deliverydate = dayOfYear(new Date(2023, 9, 13));
+        let deliverydate = dayOfYear(new Date(2023, 9, 24));
 
         let aYear = new Date().getFullYear();
         let aMonth = new Date().getMonth();
@@ -138,12 +138,12 @@ function trackPackage(itemId){
             document.querySelector('.delivered').style.color = 'green';
         }
     }
-    if(updatedCartArray[0][itemId].deliveryDateNumber === "2023 9 9"){
+    if(updatedCartArray[0][itemId].deliveryDateNumber === "2023 9 20"){
 
         const dayOfYear = date => Math.floor((date - new Date(date.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
 
 
-        let deliverydate = dayOfYear(new Date(2023, 9, 9));
+        let deliverydate = dayOfYear(new Date(2023, 9, 20));
 
         let aYear = new Date().getFullYear();
         let aMonth = new Date().getMonth();
