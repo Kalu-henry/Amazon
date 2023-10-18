@@ -471,6 +471,15 @@ function searchProduct(){
 
             searchProductsToBeAdded = searchProductsToBeAdded + searchProductValueHTML.innerHTML;
             document.querySelector('.container-for-all-products').innerHTML = searchProductsToBeAdded;
+
+            return;
+        }else{
+            document.querySelector('.container-for-all-products').innerHTML = `
+            <div>Sorry this product is currently out of stock</div>
+            <div>
+            <a href="amazon.html">View all avaliable products</a>
+            </div> 
+            `;
         }
     }
 
